@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <meta charset="utf-8">
+    <link href="card.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+ 
+<style>
+    body {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        perspective: 1200px;
+        display: flex;
+        width: 100%;
+    }
+ 
+    .card {
+        transform-style: preserve-3d;
+        position: absolute;
+        height: 400px;
+        cursor: pointer;
+    }
+ 
+ 
+    .front,
+    .page {
+        background-image: url(https://images.all-free-download.com/images/graphiclarge/christmas_tree_background_310632.jpg);
+    }
+ 
+    .back {
+        background-image: url(https://static.vecteezy.com/system/resources/previews/007/466/875/non_2x/yellow-color-gradient-with-soft-glowing-backdrop-texture-abstract-background-for-christmas-valentine-card-webpage-wallpaper-photo.jpg);
+    }
+ 
+    .front,
+    .back,
+    .page {
+        transform-style: preserve-3d;
+        transform-origin: left center;
+        transition-duration: 0.5s;
+        position: absolute;
+        background-color: white;
+        width: 240px;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        padding: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+ 
+    .card:hover .front {
+        transform: rotateY(-160deg);
+    }
+ 
+    .card:hover .page {
+        transform: rotateY(-159deg);
+    }
+ 
+    .card:hover .back {
+        transform: rotateY(-20deg);
+    }
+ 
+    .greetings {
+        padding-top: 30px;
+    }
+ 
+    h1 {
+        font-size: 70px;
+        position: absolute;
+        text-align: center;
+        width: 70%;
+        color: red;
+        margin-left: auto;
+        margin-right: auto;
+    }
+ 
+ 
+    .h3 {
+        font-style: bold;
+        color: black;
+        font-family: "Lucida Handwriting", sans-serif;
+    }
+ 
+    .header{
+        float: left;
+    }
+ 
+    .button {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: gold;
+        background-color: #4CAF50;
+        border: 2px solid red;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+    }
+ 
+    .container {
+        margin: 0;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        align-self: flex-end;
+        left: 50%;
+        bottom: 5%;
+    }
+ 
+    .button:hover {
+        background-color: #3e8e41
+    }
+ 
+    .button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 3px #666;
+        transform: translateY(4px);
+    }
+</style>
+ 
+<body>
+    <div class="card">
+        <div class="back">
+            <div class="greetings">
+                <h3>Dear friends & family,</h3>
+                <p><i>Wishing you nothing but the best this holiday season, hope the magic of Christmas fills every
+                        corner of your heart and home with joy! Have a merry Christmas!</i></p>
+                <h3>With regards,<br>Yeck Meng & Kar Ming</h3>
+            </div>
+        </div>
+        <div class="page">
+        </div>
+        <div class="front">
+        </div>
+    </div>
+ 
+    <header>
+        <div class="header">
+            <h1 class="header title">Merry Christmas</h1>
+        </div>
+    </header>
+ 
+    <ul class="navbar">
+        <li><a href="index.html">Home page</a>
+        <li><a href="gallery.html">Gallery</a>
+    </ul>
+ 
+ 
+    <div class="container">
+        <form method="get" action="https://drive.google.com/file/d/1AUCiep2NMx9YFJvpdL9AWHmwjd2o6Tiz/view?usp=sharing">
+            <button class="button" onclick="showText();" class="button">View PDF!</button>
+        </form>
+    </div>
+ 
+</body>
+ 
+</html>
+ 
